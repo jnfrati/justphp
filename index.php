@@ -10,10 +10,10 @@ and open the template in the editor.
 	<title>Loggin</title>
 	<link rel="stylesheet" href="indexcss.css">
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-	<link rel= 'stylesheet' href="http://localhost/~nicolas/loginphp/font/css/font-awesome.min.css">
+	<link rel= 'stylesheet' href="/font/css/font-awesome.min.css">
 	<script src="jscode.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<link href="http://localhost/~nicolas/loginphp/font/css/font-awesome.css" rel="stylesheet">
+	<link href="/font/css/font-awesome.css" rel="stylesheet">
     </head>
 
     <body>
