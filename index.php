@@ -7,7 +7,7 @@ and open the template in the editor.
 
 <html>
     <head>
-	<title>Loggin</title>
+	<title>Logging</title>
 	<link rel="stylesheet" href="indexcss.css">
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<link rel= 'stylesheet' href="/font/css/font-awesome.min.css">
