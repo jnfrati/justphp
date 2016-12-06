@@ -51,7 +51,7 @@
 			    <button type="submit" class="login-button" formmethod="post" formaction="registra.php"><i class="fa fa-chevron-right" ></i></button>
 			</div>
 			<div class="etc-login-form">
-				<p>already have an account? <a href="http://localhost/~nicolas/loginphp/index.php">login here</a></p>
+				<p>already have an account? <a href="index.php">login here</a></p>
 			</div>
 		</form>
 	</div>
