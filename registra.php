@@ -4,7 +4,7 @@
     $conf_password = filter_input(INPUT_POST,"reg_password_confirm");
     $Nombre = filter_input(INPUT_POST,"reg_fullname");
     $genero = filter_input(INPUT_POST,"reg_gender");
-    if($password == $conf_password){
+    if($password === $conf_password){
     
 	if(!filter_input(INPUT_POST, "reg_email",FILTER_VALIDATE_EMAIL)){
 	    echo "<script>";
