@@ -49,10 +49,10 @@ and open the template in the editor.
 						    </div>
 
 						    <div class="form-group login-group-checkbox">
-							    <input type="radio" class="" name="reg_gender" id="male" >
+							    <input type="radio" class="" name="reg_gender" id="male" value = "male">
 							    <label for="male">male</label>
 
-							    <input type="radio" class="" name="reg_gender" id="female" >
+							    <input type="radio" class="" name="reg_gender" id="female" value = "female" >
 							    <label for="female">female</label>
 						    </div>
 
@@ -61,7 +61,7 @@ and open the template in the editor.
 							    <label for="reg_agree">i agree with <a href="#">terms</a></label>
 						    </div>
 					    </div>
-					<button type="submit" class="login-button" formmethod="post" formaction="registra.php"><i class="fa fa-chevron-right" ></i></button>
+					<button type="submit" class="login-button" formmethod="post" formaction="registra.php"></button>
 				    </div>
 				    <div class="etc-login-form">
 					    <p>already have an account? <a href="index.php">login here</a></p>

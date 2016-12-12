@@ -4,6 +4,13 @@
     $conf_password = filter_input(INPUT_POST,"reg_password_confirm");
     $Nombre = filter_input(INPUT_POST,"reg_fullname");
     $genero = filter_input(INPUT_POST,"reg_gender");
+
+    if($genero === "male"){
+	$genero = 1;
+    }else{
+	$genero = 0;
+    }
+
     if($password === $conf_password){
     
 	if(!filter_input(INPUT_POST, "reg_email",FILTER_VALIDATE_EMAIL)){
@@ -11,19 +18,17 @@
 	    echo 'if(confirm("Email Invalido"));';
 	    echo "window.history.go(-1)";
 	    echo "</script>";
-	    $mail = "";
 	}else{
-	    $mail = filter_input(INPUT_POST, "mail");
+	    $mail = filter_input(INPUT_POST, "reg_email");
 	    include("abre_conexion.php");  
-
-	    $_GRABAR_SQL = "INSERT INTO $tabla_db1 (nombre,pass,gender,mail,username) VALUES ('$Nombre','$password','$genero','$mail','$username')";
-	    $conexion_db->query($_GRABAR_SQL); 
-
+	    $QUERY = "INSERT INTO usuarios(usuario,password,nombre,email,gender) VALUES('$username','$password','$Nombre','$mail','$genero');";
+	    $conexion_db->query($QUERY);
 	    include("cierra_conexion.php"); 
+	    header ("location:index.php");
 	}
     }else{
 	echo "<script>";
-	echo 'if(confirm("Password y confirm password son distintas"));';
+	echo 'if(confirm("Las contraseñas son distintas"));';
 	echo "window.history.go(-1)";
 	echo "</script>";
     }
